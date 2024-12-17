@@ -19,6 +19,19 @@ PramaanSetu addresses the critical issue of unverified and unreliable AI-generat
 - <b>Real-Time Output Validation</b>: AI outputs are validated based on the reliability of the articles or sources they reference.
 - <b>Multi-Sector Applicability</b>: PramaanSetu is tailored for diverse industries, including healthcare, finance, legal, and media, solving sector-specific challenges through validated data and trustworthy AI.
 
+### Screens
+#### 1. Home Page
+  <img src="https://github.com/user-attachments/assets/4fbc81b7-754d-4467-8ede-ce52e61caf43" height="400" width="800"/>
+
+#### 2. Input Form Page
+  <img src="https://github.com/user-attachments/assets/b5c21943-d7fc-4c60-a275-09f84882c6de" height="400" width="800"/>
+
+#### 3. Voting Page
+   <img src="https://github.com/user-attachments/assets/45a0681c-de53-47a6-ac23-92154e4d659e" height="400" width="800"/>
+
+#### 4. Profile Page
+   <img src="https://github.com/user-attachments/assets/1af95500-d82b-4d97-966d-7bc8767a36d7" height="400" width="800"/>
+
 ### Challenges we ran into
 1. Faucet Issue with Test Ether: When deploying our contract to Polygon zkEVM, we needed to test Ether to interact with the network. We used a faucet to get the test Ether, but it wasn’t reflected in our wallet. This was frustrating, as we couldn't proceed without it. We reached out to a Telegram group and received help from mentors Reet Bantra and Akshat. They pointed out that the issue was due to using an incorrect RPC URL and ChainID in our wallet configuration. Once we corrected these settings, the test Ether appeared in our account, allowing us to continue with the deployment.
 2. Invalid Opcode Error ("mcopy"): After deploying the contract, we encountered another issue when calling a function from our backend. The error message was “invalid opcode: mcopy.” This was puzzling at first, but after digging through the contract's code, we found that the problem was due to a mismatch between the compiled version of the contract and the one expected by the network. Once again, Akshat from Polygon helped us identify that we needed to compile the contract with the correct version to resolve the issue. After recompiling with the right version, the error was fixed, and the function call worked as expected.
